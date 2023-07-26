@@ -49,15 +49,12 @@ api.init(cred.cred)
 YOUR_CRED = ""
 
 api: SklandApi = SklandApiV1()
-
+# 初始化API
 api.init(YOUR_CRED)
-
+# 获取游戏帐号绑定
 binding = api.game.player_binding()
-
 print("binding: \n", binding)
-
+# 获取游戏信息
 info = api.game.player_info(binding[0].binding_list[0].uid)
-
-print("info")
 print(json.dumps(info,indent=2,ensure_ascii=False))
 ```
