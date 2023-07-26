@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "skland-api"
+version = "0.1.0"
+authors = [
+  { name="Aynakeya", email="aynakeya.official@gmail.com" },
+]
+description = "Unofficial Hypergryph Skland API SDK for Python"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Intended Audience :: Developers",
+]
+dependencies = [
+    "httpx",
+    "dataclasses-json",
+]
+
+[tool.hatchling]
+source-dir = "skland"
